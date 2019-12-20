@@ -3,10 +3,10 @@ title: all_equal
 tags: array,beginner
 ---
 
-Check if all elements in an array are equal.
+Checks if all the elements in an array are equal.
 
 Use `Set(arr)` to create a new set of unique values. 
-Compare the `length()` of the Set to `1` to check if all the values are equal.
+Compare the `length()` of the set to `1` to check if all the values are equal.
 
 ```jl
 function all_equal(arr)
