@@ -3,13 +3,13 @@ title: all_equal
 tags: list,beginner
 ---
 
-Check if all elements in a list are equal.
+Check if all elements in an array are equal.
 
-Use `Set(lst)` to create a new set of unique values. If the `length()` of the set is "1", you know that all the values are equal.
+Use `Set(arr)` to create a new set of unique values. If the `length()` of the Set is "1", you know that all the values are equal.
 
 ```Julia
-function all_equal(lst)
-  return length(Set(lst)) <= 1
+function all_equal(arr)
+  return length(Set(arr)) <= 1
 end
 ```
 
