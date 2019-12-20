@@ -5,7 +5,8 @@ tags: list,beginner
 
 Check if all elements in an array are equal.
 
-Use `Set(arr)` to create a new set of unique values. If the `length()` of the Set is "1", you know that all the values are equal.
+Use `Set(arr)` to create a new set of unique values. 
+Compare the `length()` of the Set to `1` to check if all the values are equal.
 
 ```Julia
 function all_equal(arr)
