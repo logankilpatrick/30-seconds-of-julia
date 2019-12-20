@@ -9,7 +9,7 @@ Use `sum()` to sum all of the `args` provided, divide by `length(args)`.
 
 ```Julia
 function average(args...)
-    return sum(args) / length(args)
+  return sum(args) / length(args)
 end
 ```
 
