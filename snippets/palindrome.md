@@ -9,7 +9,7 @@ Use lowercase(string) to convert given string and its reverse to lowercase while
 
 ```jl
 function palindrome(string::String)
-    return lowercase(string) === lowercase(reverse(string))
+    return lowercase(string) == lowercase(reverse(string))
 end
 ```
 
