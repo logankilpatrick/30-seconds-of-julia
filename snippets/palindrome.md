@@ -1,13 +1,13 @@
-# ---
-# title: palindrome
-# tags: string,beginner
-# ---
+---
+title: palindrome
+tags: string,beginner
+---
 
-# Returns true if the given string is a palindrome, false otherwise.
+Returns true if the given string is a palindrome, false otherwise.
 
-# Create a reversed string from given string, then compare them in lowercase.
+Create a reversed string from given string, then compare them in lowercase.
 
-# ```jl
+```jl
 function palindrome(string::String)
     reverse_string = ""
     str_index = lastindex(string)
@@ -19,9 +19,9 @@ function palindrome(string::String)
 
     return lowercase(string) == lowercase(reverse_string)
 end
-# ```
+```
 
-# ```jl
+```jl
 palindrome("racecar") # True
 palindrome("mycat") # False
-# ```
+```
