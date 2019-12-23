@@ -7,7 +7,7 @@ Checks if an array has any duplicate elements.
 
 Uses ```Set(arr)``` to create list of  distinct values then compares 
 the ```length()``` of the set and the ```length()``` of the original array to check
-if all values in the array are unique. 
+if all values in ```arr``` are unique. 
 ```jl
 function has_duplicates(arr)
     return length(Set(arr)) != length(arr)
