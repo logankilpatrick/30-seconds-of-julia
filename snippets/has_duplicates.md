@@ -3,14 +3,13 @@ title: has_duplicates
 tags: array,beginner
 ---
 
-Checks if an array has any duplicate elements.
+Checks if an array has duplicate values.
 
-Uses ```Set(arr)``` to create list of  distinct values then compares 
-the ```length()``` of the set and the ```length()``` of the original array to check
-if all values in ```arr``` are unique. 
+Use `Set(arr)` to create list of  distinct values, then compare its `length()` to the one of the original array.
+
 ```jl
 function has_duplicates(arr)
-    return length(Set(arr)) != length(arr)
+  return length(Set(arr)) != length(arr)
 end
 ```
 
