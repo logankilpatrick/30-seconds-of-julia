@@ -1,25 +1,21 @@
 ---
-title:is_anagram
-tags:string,intermediate
+title: is_anagram
+tags: string,beginner
 ---
 
 Checks if a string is an anagram of another string.
 
-Use ``lowercase()`` to convert both strings to lowercase
-Use ``collect()`` to return an array of all items in the collection.
-Use ``sort()`` to return a stored copy of the string
-Use ``join()`` to join the array of strings into a single string.
-Finally returns ``true`` if the two strings are anagrams and ``false`` if they're not.
+Use `lowercase()`, `collect()`, `sort()` and `join()` to convert each string to its sorted, lowercase version.
+Compare the results and return `true` if they are equal, `false` otherwise.
 
 ```jl
-  function is_anagram(firstString,secondString)
-   sortFirstString=join(sort(collect(lowercase(firstString))))
-   sortSecondString=join(sort(collect(lowercase(secondString)))) 
-   return sortFirstString==sortSecondString
-  end
+function is_anagram(firstString, secondString)
+  sortedFirstString = join(sort(collect(lowercase(firstString))))
+  sortedSecondString = join(sort(collect(lowercase(secondString)))) 
+  return sortedFirstString == sortedSecondString
+end
 ```
 
 ```jl
-  is_anagram("Redeem Grimm","Girmm Meeder")  #True
-  is_anagram("Redeem Grim","Girmm Meeder")  #False
+is_anagram("Anagram", "Garaman")  # True
 ```
