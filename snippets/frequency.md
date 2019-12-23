@@ -3,14 +3,13 @@ title: frequency
 tags: array,beginner
 ---
 
-Calculates the frequency of an element `ele` in an array.
+Calculates the frequency of an element in an array.
 
-Use `count(p, itr)` to count the number of elements in `itr` for which the
-predicate `p` is if the current element is equal to `ele`.
+Use `count()` with an appropriate predicate function to count the number of elements in `arr` that are equal to `el`.
 
 ```jl
-function frequency(arr, ele)
-  return count(x -> x == ele, arr)
+function frequency(arr, el)
+  return count(x -> x == el, arr)
 end
 ```
 
